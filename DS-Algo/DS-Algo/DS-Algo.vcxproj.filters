@@ -14,10 +14,7 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="DS">
-      <UniqueIdentifier>{348fe5dc-35ef-477c-ab0c-41a264e51d02}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Algo">
-      <UniqueIdentifier>{fb01c9f1-06be-45c0-865e-82392232b5c9}</UniqueIdentifier>
+      <UniqueIdentifier>{232871bd-e4c2-423f-b571-48debbe804a5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -25,6 +22,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -43,5 +43,10 @@
     <Text Include="output.txt">
       <Filter>Resource Files</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DS-Algo.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>
