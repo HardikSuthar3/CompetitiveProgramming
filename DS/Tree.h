@@ -21,8 +21,52 @@ public:
 	}
 };
 
+// Adding option to add new node in the tree. 
+Node *addNode(int s, int l, int r)
+{
+	if (s < 0)
+	{
+		return NULL;
+	}
 
+	Node *S;
 
+	if (nodeList.find(s) == nodeList.end())
+	{
+		S = new Node(s);
+		nodeList.insert(make_pair(s, S));
+	}
+	else
+	{
+		S = nodeList[s];
+	}
+
+	if (l > 0)
+	{
+		S->left = (nodeList.find(l) != nodeList.end()) ? nodeList[l] : addNode(l, -1, -1);
+	}
+	else
+	{
+		if (S->left != NULL);
+		else {
+			S->left = NULL;
+		}
+	}
+
+	if (r > 0)
+	{
+		S->right = (nodeList.find(r) != nodeList.end()) ? nodeList[r] : addNode(r, -1, -1);
+	}
+	else
+	{
+		if (S->right != NULL);
+		else
+		{
+			S->right = NULL;
+		}
+	}
+	return S;
+}
 
 void inOrderTraversal(Node *start)
 {
