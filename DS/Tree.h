@@ -21,7 +21,7 @@ public:
 	}
 };
 
-// Adding option to add new node in the tree. 
+
 Node *addNode(int s, int l, int r)
 {
 	if (s < 0)
