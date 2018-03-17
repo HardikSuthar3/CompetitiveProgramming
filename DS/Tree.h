@@ -1,6 +1,12 @@
 #include "bits\stdc++.h"
 using namespace std;
 
+class Node; 
+
+Node *root;
+map<int, Node *> nodeList;
+
+
 class Node
 {
 public:
@@ -15,33 +21,49 @@ public:
 	}
 };
 
-Node *root;
-map<int, Node *> nodeList;
 
-void addNode(int s, int l, int r)
+
+
+void inOrderTraversal(Node *start)
 {
-	if (s < 0)
+	if (start->left != NULL)
 	{
-		return;
+		inOrderTraversal(start->left);
 	}
+	cout << start->data << endl;
 
-	Node *S;
-
-	if (nodeList.find(s) == nodeList.end())
+	if (start->right != NULL)
 	{
-		S = new Node(s);
-		nodeList.insert(make_pair(s, S));
+		inOrderTraversal(start->right);
 	}
-	else
-	{
-		S = nodeList[s];
-	}
-
-	S->left = (nodeList.find(l) == nodeList.end()) ? nodeList[l] : NULL;
-	S->right = (nodeList.find(r) == nodeList.end()) ? nodeList[r] : NULL;
-
 }
 
-void inOrderTraversal() {
+void preOrderTraversal(Node *start)
+{
+	cout << start->data << endl;
 
+	if (start->left != NULL)
+	{
+		inOrderTraversal(start->left);
+	}
+
+	if (start->right != NULL)
+	{
+		inOrderTraversal(start->right);
+	}
+}
+
+void postOrderTraversal(Node *start)
+{
+	cout << start->data << endl;
+
+	if (start->left != NULL)
+	{
+		inOrderTraversal(start->left);
+	}
+
+	if (start->right != NULL)
+	{
+		inOrderTraversal(start->right);
+	}
 }
