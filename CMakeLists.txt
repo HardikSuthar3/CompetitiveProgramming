@@ -3,4 +3,4 @@ project(CompetitiveProgramming)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(CompetitiveProgramming Main.cpp)
+add_executable(CompetitiveProgramming Main.cpp Algo/Test.h)

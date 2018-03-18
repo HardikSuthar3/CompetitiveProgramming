@@ -1,7 +1,9 @@
 #include "bits/stdc++.h"
+
 using namespace std;
-int main()
-{
- string str = "Hardik"; 
- cout<< str.size();
+
+int main() {
+    string name = " Hardik";
+
+    return 0;
 }
