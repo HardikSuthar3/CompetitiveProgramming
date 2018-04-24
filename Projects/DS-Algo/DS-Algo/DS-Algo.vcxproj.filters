@@ -30,7 +30,7 @@
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\DS\Tree.h">
+    <ClInclude Include="..\..\..\Files\DS\Tree.h">
       <Filter>DS</Filter>
     </ClInclude>
   </ItemGroup>

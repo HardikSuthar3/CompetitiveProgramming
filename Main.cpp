@@ -4,17 +4,11 @@ using namespace std;
 
 int main()
 {
-    string name = " Hardik";
-    vector<int> number;
-    for (int i = 0; i < 10; i++)
+    string name = "Hardik";
+    int n = name.length();
+    for (auto &item : name)
     {
-        number.push_back(i + 1);
-    }
-
-    for (auto &i : number)
-    {
-        cout << i << " ";
-        
+        cout << item << " ";
     }
 
     return 0;
