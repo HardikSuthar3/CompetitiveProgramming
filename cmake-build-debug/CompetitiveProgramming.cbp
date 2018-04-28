@@ -78,15 +78,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/HSData/Data/Development/CPP Projects/CompetitiveProgramming/Algo/Test.h">
-			<Option target="CompetitiveProgramming"/>
-		</Unit>
-		<Unit filename="/HSData/Data/Development/CPP Projects/CompetitiveProgramming/DS/BinarySearchTree.h">
-			<Option target="CompetitiveProgramming"/>
-		</Unit>
-		<Unit filename="/HSData/Data/Development/CPP Projects/CompetitiveProgramming/Main.cpp">
-			<Option target="CompetitiveProgramming"/>
-		</Unit>
 		<Unit filename="/HSData/Data/Development/CPP Projects/CompetitiveProgramming/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

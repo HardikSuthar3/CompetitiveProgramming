@@ -123,33 +123,6 @@ CompetitiveProgramming/fast:
 	$(MAKE) -f CMakeFiles/CompetitiveProgramming.dir/build.make CMakeFiles/CompetitiveProgramming.dir/build
 .PHONY : CompetitiveProgramming/fast
 
-Main.o: Main.cpp.o
-
-.PHONY : Main.o
-
-# target to build an object file
-Main.cpp.o:
-	$(MAKE) -f CMakeFiles/CompetitiveProgramming.dir/build.make CMakeFiles/CompetitiveProgramming.dir/Main.cpp.o
-.PHONY : Main.cpp.o
-
-Main.i: Main.cpp.i
-
-.PHONY : Main.i
-
-# target to preprocess a source file
-Main.cpp.i:
-	$(MAKE) -f CMakeFiles/CompetitiveProgramming.dir/build.make CMakeFiles/CompetitiveProgramming.dir/Main.cpp.i
-.PHONY : Main.cpp.i
-
-Main.s: Main.cpp.s
-
-.PHONY : Main.s
-
-# target to generate assembly for a file
-Main.cpp.s:
-	$(MAKE) -f CMakeFiles/CompetitiveProgramming.dir/build.make CMakeFiles/CompetitiveProgramming.dir/Main.cpp.s
-.PHONY : Main.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +132,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... CompetitiveProgramming"
-	@echo "... Main.o"
-	@echo "... Main.i"
-	@echo "... Main.s"
 .PHONY : help
 
 
