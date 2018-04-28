@@ -1,15 +1,4 @@
 /Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/HSData/Data/Development/CPP Projects/CompetitiveProgramming"
 -- Configuring done
-CMake Error at CMakeLists.txt:6 (add_executable):
-  Cannot find source file:
-
-    Algo/Test.h
-
-  Tried extensions .c .C .c++ .cc .cpp .cxx .m .M .mm .h .hh .h++ .hm .hpp
-  .hxx .in .txx
-
-
-CMake Error: CMake can not determine linker language for target: CompetitiveProgramming
-CMake Error: Cannot determine link language for target "CompetitiveProgramming".
 -- Generating done
 -- Build files have been written to: /HSData/Data/Development/CPP Projects/CompetitiveProgramming/cmake-build-debug
