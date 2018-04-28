@@ -90,7 +90,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CRT_SECURE_NO_WARNINGS;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\MinGW\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits;C:\MinGW\lib\gcc\mingw32\6.3.0\include\c++\mingw32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>d:\OneDrive - Microsoft\Development\C++\CompetitiveProgramming\Files\;C:\MinGW\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits;C:\MinGW\lib\gcc\mingw32\6.3.0\include\c++\mingw32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <PrecompiledHeaderFile />
     </ClCompile>
@@ -150,7 +150,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\DS\Tree.h" />
+    <ClInclude Include="..\..\..\Files\DS\Tree.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
