@@ -6,7 +6,7 @@ using namespace std;
 
 class Node
 {
-public:
+  public:
 	int data;
 	Node *left, *right;
 	Node(int data)
@@ -18,21 +18,22 @@ public:
 	}
 };
 
-class BinaryTree {
-public:
-	Node * root;
-	map<int, Node*> nodeList;
+class BinaryTree
+{
+  public:
+	Node *root;
+	map<int, Node *> nodeList;
 	Node *addNode(int s, int l, int r);
 	void Make_Tree(int N);
 	bool Set_root(int r);
 	void inOrderTraversal(Node *start);
 	void preOrderTraversal(Node *start);
 	void postOrderTraversal(Node *start);
-	void BFS(Node * start);
-	void DFS(Node * start);
+	void BFS(Node *start);
+	void DFS(Node *start);
 };
 
-Node * BinaryTree::addNode(int s, int l, int r)
+Node *BinaryTree::addNode(int s, int l, int r)
 {
 	if (s < 0)
 	{
@@ -57,8 +58,10 @@ Node * BinaryTree::addNode(int s, int l, int r)
 	}
 	else
 	{
-		if (S->left != NULL);
-		else {
+		if (S->left != NULL)
+			;
+		else
+		{
 			S->left = NULL;
 		}
 	}
@@ -69,7 +72,8 @@ Node * BinaryTree::addNode(int s, int l, int r)
 	}
 	else
 	{
-		if (S->right != NULL);
+		if (S->right != NULL)
+			;
 		else
 		{
 			S->right = NULL;
@@ -78,8 +82,10 @@ Node * BinaryTree::addNode(int s, int l, int r)
 	return S;
 }
 
-void BinaryTree::Make_Tree(int N) {
-	for (int i = 0; i < N - 1; i++) {
+void BinaryTree::Make_Tree(int N)
+{
+	for (int i = 0; i < N - 1; i++)
+	{
 		int par, child;
 		char ch;
 		cin >> par >> child >> ch;
@@ -95,8 +101,10 @@ void BinaryTree::Make_Tree(int N) {
 	}
 }
 
-bool BinaryTree::Set_root(int r) {
-	if (nodeList.find(r) == nodeList.end()) {
+bool BinaryTree::Set_root(int r)
+{
+	if (nodeList.find(r) == nodeList.end())
+	{
 		return false;
 	}
 
@@ -148,8 +156,10 @@ void BinaryTree::postOrderTraversal(Node *start)
 	}
 }
 
-void BinaryTree::BFS(Node * start) {
-	if (start == NULL) {
+void BinaryTree::BFS(Node *start)
+{
+	if (start == NULL)
+	{
 		return;
 	}
 
@@ -160,30 +170,36 @@ void BinaryTree::BFS(Node * start) {
 	queue<Node *> que;
 	que.push(u);
 
-	while (!que.empty()) {
+	while (!que.empty())
+	{
 		Node *node = que.front();
 		que.pop();
 		visited.insert(node->data);
 
 		cout << node->data << " ";
-		if (node->left != NULL && binary_search(visited.begin(), visited.end(), node->left->data) == false) {
+		if (node->left != NULL && binary_search(visited.begin(), visited.end(), node->left->data) == false)
+		{
 			que.push(node->left);
 		}
 
-		if (node->right != NULL && binary_search(visited.begin(), visited.end(), node->right->data) == false) {
+		if (node->right != NULL && binary_search(visited.begin(), visited.end(), node->right->data) == false)
+		{
 			que.push(node->right);
 		}
 	}
 }
 
-void BinaryTree::DFS(Node * start) {
+void BinaryTree::DFS(Node *start)
+{
 	static set<int> visited;
 
-	if (start == NULL) {
+	if (start == NULL)
+	{
 		return;
 	}
 
-	if (binary_search(visited.begin(), visited.end(), start->data)) {
+	if (binary_search(visited.begin(), visited.end(), start->data))
+	{
 		return;
 	}
 
@@ -193,11 +209,13 @@ void BinaryTree::DFS(Node * start) {
 
 	auto tmp = start;
 
-	if (tmp->left != NULL) {
+	if (tmp->left != NULL)
+	{
 		DFS(tmp->left);
 	}
 
-	if (tmp->right != NULL) {
+	if (tmp->right != NULL)
+	{
 		DFS(tmp->right);
 	}
 }
