@@ -1,14 +1,13 @@
 #include "bits/stdc++.h"
-
 using namespace std;
 
 int main()
 {
     string name = "Hardik";
     int n = name.length();
-    for (auto &item : name)
+    for (size_t i = 0; i < n; i++)
     {
-        cout << item << " ";
+        cout << name[i] << " ";
     }
 
     return 0;

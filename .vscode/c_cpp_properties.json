@@ -52,7 +52,6 @@
                 "C:/Program Files (x86)/Windows Kits/10/Include/10.0.16299.0/shared",
                 "C:/Program Files (x86)/Windows Kits/10/Include/10.0.16299.0/winrt",
                 "${workspaceRoot}",
-                "C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++",
                 "C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32"
             ],
             "defines": [
@@ -70,7 +69,6 @@
                     "C:/Program Files (x86)/Windows Kits/10/Include/10.0.16299.0/shared",
                     "C:/Program Files (x86)/Windows Kits/10/Include/10.0.16299.0/winrt",
                     "${workspaceRoot}",
-                    "C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++",
                     "C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
@@ -80,5 +78,5 @@
             "cppStandard": "c++17"
         }
     ],
-    "version": 3
+    "version": 4
 }
