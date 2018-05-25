@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "*.cpp": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "queue": "cpp",
+        "stack": "cpp"
     }
 }
