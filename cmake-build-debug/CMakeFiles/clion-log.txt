@@ -1,0 +1,4 @@
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/HSData/Data/Development/CPP Projects/CompetitiveProgramming"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /HSData/Data/Development/CPP Projects/CompetitiveProgramming/cmake-build-debug

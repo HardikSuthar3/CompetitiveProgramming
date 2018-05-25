@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/HSData/Data/Development/CPP Projects/CompetitiveProgramming/Main.cpp
+bits/stdc++.h
+/HSData/Data/Development/CPP Projects/CompetitiveProgramming/bits/stdc++.h
+

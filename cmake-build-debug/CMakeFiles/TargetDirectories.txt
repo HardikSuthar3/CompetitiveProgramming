@@ -1,0 +1,3 @@
+/HSData/Data/Development/CPP Projects/CompetitiveProgramming/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/HSData/Data/Development/CPP Projects/CompetitiveProgramming/cmake-build-debug/CMakeFiles/edit_cache.dir
+/HSData/Data/Development/CPP Projects/CompetitiveProgramming/cmake-build-debug/CMakeFiles/CompetitiveProgramming.dir
