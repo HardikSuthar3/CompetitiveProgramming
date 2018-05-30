@@ -1,6 +1,33 @@
 #include "bits/stdc++.h"
 using namespace std;
 
+void next_greater(vector<int> &a)
+{
+    stack<int> st;
+    st.push(a[0]);
+    for (int i = 1; i < a.size(); i++)
+    {
+        int next = a[i];
+        if (!st.empty())
+        {
+            while (next > st.top())
+            {
+                cout << st.top() << "->" << next << endl;
+                st.pop();
+                if (st.empty())
+                    break;
+            }
+        }
+        st.push(next);
+    }
+
+    while (st.empty() == false)
+    {
+        cout << st.top() << "->-1" << endl;
+        st.pop();
+    }
+}
+
 int main()
 {
     auto file = freopen("D:\\OneDrive - Microsoft\\Development\\C++\\CompetitiveProgramming\\Projects\\DS-Algo\\DS-Algo\\input.txt", "r", stdin);
