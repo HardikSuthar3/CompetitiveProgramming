@@ -3,6 +3,10 @@
         "*.cpp": "cpp",
         "valarray": "cpp",
         "queue": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "iostream": "cpp",
+        "random": "cpp",
+        "string": "cpp",
+        "xstring": "cpp"
     }
 }
