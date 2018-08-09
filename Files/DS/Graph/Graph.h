@@ -14,7 +14,7 @@ vector<long> dist(MAX_Vertice, -1);
 
 int noOfVertices = 0, noOfEdges = 0;
 
-//Graph creation module
+///Graph creation module
 void makeGraph(int V, int E) {
 	noOfEdges = E;
 	noOfVertices = V;
@@ -66,15 +66,28 @@ void ClearGraph() {
 
 	noOfVertices = noOfEdges = 0;
 }
-//End of graph creation module
+///End of graph creation module
 
 
-//Union Find Data Structure
+///Union Find Data Structure
 
-void Union(int x,int y) {}
-
+//find parent
 int Find(int x) {
+	if (parent[x] == -1) {
+		return x;
+	}
+	else {
+		return Find(parent[x]);
+	}
+}
+void Union(int x,int y) {
+	int pX = Find(x); 
+	int pY = Find(y);
 
+	if (pX != pY) {
+		parent[y] = pX;
+	}
 }
 
-//End of Union Find
+///End of Union Find
+
