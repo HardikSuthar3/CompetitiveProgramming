@@ -88,6 +88,5 @@ void Union(int x,int y) {
 		parent[y] = pX;
 	}
 }
-
 ///End of Union Find
 
